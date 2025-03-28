@@ -11,17 +11,18 @@
         <table border=1>
             <thead>
                 <tr>
-                    <th>IdLlibre</th>
+                    <th>ID</th>
                     <th>Títol</th>
                     <th>Autor</th>
                     <th>Editorial</th>
                     <th>Data d'edició</th>
                     <th>Temàtica</th>
+                    <th>ISBN</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:if="${llibres.empty}" >
-                    <td colspan="2">No hi ha llibres disponibles</td>
+                    <td colspan="7">No hi ha llibres disponibles</td>
                 </tr>
                 <tr th:each="llibre:${llibres}">
                     <td><span th:text="${llibre.idLlibre}"></span></td>
@@ -30,6 +31,7 @@
                     <td><span th:text="${llibre.editorial}"></span></td>
                     <td><span th:text="${llibre.datapublicacio}"></span></td>
                     <td><span th:text="${llibre.tematica}"></span></td>
+                    <td><span th:text="${llibre.isbn}"></span></td>
                 </tr>
             </tbody>
         </table>

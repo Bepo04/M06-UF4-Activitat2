@@ -120,7 +120,7 @@ public class BookController {
         boolean llibreErr = false;
 
         try {
-            idLlib = Integer.parseInt(idLlibre);
+            idLlib = Integer.parseInt(idLlibre.trim());
             Optional<Llibre> llibre = bookService.findByIdLlibre(idLlib);
             if(llibre !=null) {
                 model.addAttribute("llibre", llibre.get());
@@ -128,9 +128,13 @@ public class BookController {
                 message = "No hi ha cap llibre amb aquesta id";
                 llibreErr = true;
             }
-
-        } catch (Exception e) {
+        
+        } catch (NumberFormatException e) {
             message = "La id de llibre ha de ser un nombre enter";
+            llibreErr = true;
+        
+        } catch (Exception e) {
+            message = "No hi ha cap llibre amb aquesta id";
             llibreErr = true;
         } 
         
