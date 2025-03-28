@@ -8,27 +8,27 @@
 ### 1. Login
 En arrancar l'aplicació i entrar, arribarem a la pàgina de login. Aquí introduirem les credencials de la imatge i premerem el botó **Accedir**.
 
-![alt text](img/login.png)
+![alt text](login.png)
 
 ### 2. Menú principal
 Si introduim les credencials correctament, arribarem a la pàgina inicial. Si fallen les credencials, serem redirigits a la pàgina de login de nou.
 
-![alt text](img/menu.png)
+![alt text](menu.png)
 
 ### 3. Inserir nous llibres
 A la pantalla per inserir un nou llibre podrem omplir el formulari per afegir nous llibres.
 
-![alt text](img/insert.png)
+![alt text](insert.png)
 
 ### 4. Consultar tots els llibres
 Amb la opció del menú corresponent, podrem veure tots els llibres registrats:
 
-![alt text](img/taula.png)
+![alt text](taula.png)
 
 ### 5. Cerca per id
 Podem buscar un llibre en concret pel seu ID
 
-![alt text](img/cerca.png)
+![alt text](cerca.png)
 
 
 ## Preguntes teòriques
